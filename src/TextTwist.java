@@ -54,11 +54,10 @@ public class TextTwist {
 					break;
 			}
 			
-			for(int i = 0; i < wordLength; i++) { //Iterates through guessed word and compares
-												  //if the expected character exists
+			for(int i = 0; i < wordLength; i++) { 							
 				for(int j = 0; j < 6; j++) {
-					if(answer.charAt(i) == word.charAt(j) && !characterUsed[j]) { // Characters match and each
-						characterUsed[j] = true;								  // character can only be used once
+					if(answer.charAt(i) == word.charAt(j) && !characterUsed[j]) { 		// Characters match and each
+						characterUsed[j] = true;					// character can only be used once
 						matchCount++;
 						break;
 					}
